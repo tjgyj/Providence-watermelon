@@ -102,7 +102,7 @@
 				if (window.navigator.language == "zh-CN" || window.navigator.language == "zh-cn") {
 					document.title = "合成大海胆";
 				} else if (window.navigator.language == "ja-JP") {
-					document.title = "ミニゲーム：合成おっぱい";
+					document.title = "ミニゲーム：合成ウニ";
 				} else {
 					document.title = "Little game：Synthetic watermelon";
 				}
@@ -140,7 +140,7 @@
 					if (!loadintT) {
 						return;
 					}
-					loadintT.innerHTML = 'loading......' + parseInt(tempSeconds) + '%';
+					loadintT.innerHTML = '妖精正在拯救世界..' + parseInt(tempSeconds) + '%';
 					switch (tempSeconds) {
 						case 20:
 							updateLabView(0.2);
@@ -172,7 +172,7 @@
 					if (tempSeconds > 100) {
 						clearInterval(timer);
 						tempSeconds = 100
-						loadintT.innerHTML = 'loading......' + parseInt(tempSeconds) + '%';
+						loadintT.innerHTML = '妖精正在拯救世界..' + parseInt(tempSeconds) + '%';
 					}
 				}, t * 1000);
 			}
