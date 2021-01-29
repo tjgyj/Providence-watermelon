@@ -25,7 +25,7 @@
 		<meta name="full-screen" content="yes" />
 		<meta name="x5-fullscreen" content="true" />
 		<meta name="360-fullscreen" content="true" />
- 
+
 		<!-- force screen orientation on some browser -->
 		<meta name="screen-orientation" content="" />
 		<meta name="x5-orientation" content="">
@@ -71,7 +71,7 @@
 
 		<div id="adContainer" style="display:none;position: absolute;top:0px;left: 0px;width:100%;height:100%;z-index:999;"></div>
 		<div id="loadingText" style="width:100%;display: none;text-align:center;position:absolute;top:45%;z-index:2;font-size:20px;color:#f99f0a">
-			loading...0%
+			妖精拯救世界中..0%
 		</div>
 
 		<div id="splash">
@@ -95,7 +95,6 @@
 			var adEndComplete = false;
 			var resEndComplete = false;
 			judgeLanTitle();
-
 			//=========================检查判断浏览器使用语言=================================
 			function judgeLanTitle() {
 				//        console.log("window.navigator.language",window.navigator.language);
@@ -140,7 +139,7 @@
 					if (!loadintT) {
 						return;
 					}
-					loadintT.innerHTML = '妖精正在拯救世界..' + parseInt(tempSeconds) + '%';
+					loadintT.innerHTML = '妖精拯救世界中..' + parseInt(tempSeconds) + '%';
 					switch (tempSeconds) {
 						case 20:
 							updateLabView(0.2);
@@ -172,7 +171,7 @@
 					if (tempSeconds > 100) {
 						clearInterval(timer);
 						tempSeconds = 100
-						loadintT.innerHTML = '妖精正在拯救世界..' + parseInt(tempSeconds) + '%';
+						loadintT.innerHTML = '妖精拯救世界中..' + parseInt(tempSeconds) + '%';
 					}
 				}, t * 1000);
 			}
