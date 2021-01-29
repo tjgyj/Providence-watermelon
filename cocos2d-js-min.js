@@ -6364,11 +6364,11 @@
                 return i + " Arguments: " + n.join(", ")
             }
         }
-        cc._throw = function(t) {
-            n.callInNextTick((function() {
-                throw t
-            }))
-        };
+//      cc._throw = function(t) {
+//          n.callInNextTick((function() {
+//              throw t
+//          }))
+//      };
         var a = o("Log");
         cc.logID = function() {
             cc.log(a.apply(null, arguments))
